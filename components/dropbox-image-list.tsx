@@ -7,7 +7,7 @@ import { Spinner } from "@material-tailwind/react";
 
 export default function DropboxImageList({ searchInput }) {
     const searchImageQuery = useQuery({
-        queryKey: ["images, searchInput"],
+        queryKey: ["images", searchInput],
         queryFn: () => searchFiles(searchInput),
     })
 
